@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* Styling for the popover */
+      .popover {
+          background-color: #fafafa;
+          border: 1px solid #DDDDDD;
+          border-radius: 4px;
+          display: none;
+          position: absolute;
+          padding: 10px;
+          width: 200px;
+          text-align: center;
+      }
+
+      /* Styling for the button */
+      .button {
+          background-color: #4CAF50;
+          color: #ffffff;
+          padding: 10px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          position: relative;
+      }
+
+      /* Hover effect to display the popover */
+      .button:hover + .popover {
+          display: block;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Button with popover -->
+    <button class="button">Hover me</button>
+    <div class="popover">This is additional information!</div>
+
+  </body>
+</html>
